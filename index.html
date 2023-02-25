@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- diện tích , chu vi hcm -->
+    <input type="number" placeholder="nhập vào chiều dài" id="chieudai">
+    <input type="number" placeholder="nhập vào chiều rông" id="chieurong" >
+    <button onclick="tinh()">tính</button>
+    <div>
+        chu vi: <span id='chuVi'></span>
+    </div>
+    <div>
+        dien tich: <span id='dienTich'></span>
+    </div>
+    <br> 
+    <hr>
+    <br> 
+    <!-- tính tiền lương nhân viên -->
+    <input type="number" placeholder="nhập vào số ngày làm" id="ngaylam">
+    <input type="number" id="luong1ngay" value="100000" readonly>
+    <button onclick="TinhTienLuong()">tính tiền lương</button>
+    <div>
+        tổng tiền lương : <span id="TienLuong"></span>
+    </div>
+    <br> 
+    <hr>
+    <br> 
+    <!-- tính giá trị trung bình -->
+    <input type="number" placeholder="nhập vào  thứ 1 " id="num1">
+    <input type="number" placeholder="nhập vào  thứ 2" id="num2" >
+    <input type="number" placeholder="nhập vào  thứ 3" id="num3">
+    <input type="number" placeholder="nhập vào  thứ 4" id="num4" >
+    <input type="number" placeholder="nhập vào  thứ 5" id="num5" >
+    <button onclick="TinhGiaTri()">tính</button>
+    <div>
+        Giá trị trung bình: <span id="GiaTriTrungBinh"></span>
+    </div>
+    <br> 
+    <hr>
+    <br>
+    <!-- tính tổng 2 ký số -->
+     <input type="number" placeholder="nhập 2 ký số " id="2kyso">
+     <button onclick="Tong2KySo()">tính</button>
+     <div>
+        Tổng 2 ký số : <span id="Tong2KySoo"></span>
+     </div>
+     <br> 
+    <hr>
+    <br>
+    <!-- Quy đổi tiền -->
+    <input type="number" placeholder="nhập vào usd" id="usd">
+    <input type="number" id="vnd" value="23500" readonly>
+    <button onclick="ChuyenTien()">Quy đổi tiền</button>
+    <div>
+        Quy đổi tiền : <span id="QuyDoi"></span>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
